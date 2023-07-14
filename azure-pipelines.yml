@@ -5,6 +5,8 @@
 
 trigger:
 - main
+variables:
+- group: aca variable group
 
 pool:
   vmImage: ubuntu-latest
