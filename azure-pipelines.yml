@@ -17,10 +17,7 @@ steps:
       appSourcePath: '$(Build.SourcesDirectory)/src'
       azureSubscription: '$(azureSubscription)'
       acrName: '$(acrName)'
-      imageToBuild: '$(imageToBuild)'
-      containerAppName: '$(containerAppName)'
       resourceGroup: '$(resourceGroup)'
-      containerAppEnvironment: '$(containerAppEnvironment)'
       location: '$(location)'
   - task: UseDotNet@2
     displayName: 'Use dotnet 3.1'
