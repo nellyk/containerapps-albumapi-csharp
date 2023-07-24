@@ -22,7 +22,6 @@ steps:
       resourceGroup: '$(resourceGroup)'
       containerAppEnvironment: '$(containerAppEnvironment)'
       location: '$(location)'
-      yamlConfigPath: '$(Build.SourcesDirectory)/acr.yml'
   - task: UseDotNet@2
     displayName: 'Use dotnet 3.1'
     inputs:
