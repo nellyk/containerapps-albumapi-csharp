@@ -19,6 +19,8 @@ steps:
       acrName: '$(acrName)'
       resourceGroup: '$(resourceGroup)'
       location: '$(location)'
+      acrUsername: '$(acrUsername)'
+      acrPassword: '$(acrPassword)'
   - task: UseDotNet@2
     displayName: 'Use dotnet 3.1'
     inputs:
