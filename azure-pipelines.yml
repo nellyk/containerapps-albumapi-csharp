@@ -10,13 +10,13 @@ variables:
 
 pool:
   vmImage: ubuntu-latest
-
 steps:
   - task: AzureContainerApps@1
     inputs:
       appSourcePath: '$(Build.SourcesDirectory)/src'
+      containerAppName: 'my-container-app'
       azureSubscription: '$(azureSubscription)'
-      # acrName: '$(acrName)'
+      acrName: '$(acrName)'
       resourceGroup: '$(resourceGroup)'
       location: '$(location)'
       # acrUsername: '$(acrUsername)'
