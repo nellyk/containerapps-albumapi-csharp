@@ -32,5 +32,9 @@ steps:
       version: 8.x
       performMultiLevelLookup: true
       includePreviewVersions: true # Required for preview versions
+
   - task: MicrosoftSecurityDevOps@1
     displayName: 'Microsoft Security DevOps'
+    inputs:
+      command: 'run'
+      artifactName: 'CodeAnalysisLogs'
